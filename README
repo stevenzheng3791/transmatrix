@@ -1,0 +1,2 @@
+Use train_tm.sh to generate a translation matrix
+Use test_tm.sh to test a trained translation matrix
