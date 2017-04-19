@@ -1,0 +1,122 @@
+sgd = SGD(lr=0.1, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='mean_squared_error',
+              optimizer=sgd)
+
+print "Learning the translation matrix"
+model.fit(m1, m2,
+          epochs=20000,
+          batch_size=100)
+
+loss: 0.0020 
+Prec@1: 0.373
+Prec@5: 0.530
+Prec@10: 0.589
+
+
+sgd = SGD(lr=1.0, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='mean_squared_error',
+              optimizer=sgd)
+
+print "Learning the translation matrix"
+model.fit(m1, m2,
+          epochs=5000,
+          batch_size=100)
+
+loss: 0.0020
+Prec@1: 0.371
+Prec@5: 0.523
+Prec@10: 0.580
+
+
+sgd = SGD(lr=1.0, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='cosine_proximity',
+              optimizer=sgd)
+
+print "Learning the translation matrix"
+model.fit(m1, m2,
+          epochs=5000,
+          batch_size=100)
+
+loss: -0.0021
+Prec@1: 0.377
+Prec@5: 0.539
+Prec@10: 0.600
+
+
+sgd = SGD(lr=1.0, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='cosine_proximity',
+              optimizer=sgd)
+
+print "Learning the translation matrix"
+model.fit(m1, m2,
+          epochs=20000,
+          batch_size=200)
+loss: -0.0021 
+
+Prec@1: 0.373
+Prec@5: 0.532
+Prec@10: 0.591
+
+sgd = SGD(lr=1.0, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='cosine_proximity',
+              optimizer=sgd)
+
+print "Learning the translation matrix"
+model.fit(m1, m2,
+          epochs=20000,
+          batch_size=200)
+Prec@1: 0.373
+Prec@5: 0.533
+Prec@10: 0.593
+
+sgd = SGD(lr=1.0)
+    model.compile(loss='cosine_proximity',
+                  optimizer=sgd)
+
+    print "Learning the translation matrix"
+    model.fit(m1, m2,
+              epochs=20000,
+              batch_size=200)
+Prec@1: 0.353
+Prec@5: 0.521
+Prec@10: 0.583
+
+
+    sgd = SGD(lr=1)
+    model.compile(loss='cosine_proximity',
+                  optimizer=sgd)
+
+    print "Learning the translation matrix"
+    model.fit(m1, m2,
+              epochs=10000,
+              batch_size=100)
+
+Prec@1: 0.355
+Prec@5: 0.521
+Prec@10: 0.577
+
+sgd = SGD(lr=10.0)
+    model.compile(loss='cosine_proximity',
+                  optimizer=sgd)
+
+    print "Learning the translation matrix"
+    model.fit(m1, m2,
+              epochs=5000,
+              batch_size=100)
+Prec@1: 0.262
+Prec@5: 0.429
+Prec@10: 0.484
+
+sgd = SGD(lr=10.0)
+    model.compile(loss='cosine_proximity',
+                  optimizer=sgd)
+
+    print "Learning the translation matrix"
+    model.fit(m1, m2,
+              epochs=5000,
+              batch_size=100)
+Prec@1: 0.377
+Prec@5: 0.540
+Prec@10: 0.595
+
+
